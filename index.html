@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WWF Banner</title>
+        <link rel="stylesheet" href="css/central.css" />
+    </head>
+    <body>
+        <!-- Banner #1 START -->
+        <div id="banner">
+            <svg
+                class="mainSVG"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 800 600"
+            >
+                <!-- Water glass START -->
+                <defs>
+                    <polygon id="liquid"></polygon>
+                    <clipPath id="mainMask">
+                        <polygon
+                            points="470 220, 470 450, 465 460, 460 465, 450 470, 350 470, 340 465, 335 460, 330 450, 330 220"
+                            fill="#fff"
+                            stroke="#000"
+                            stroke-miterlimit="10"
+                        />
+                    </clipPath>
+                    <clipPath id="liquidMask">
+                        <use xlink:href="#liquid" />
+                    </clipPath>
+                </defs>
+                <!-- Water glass END -->
+                <!-- Glass Outline START -->
+                <g
+                    id="flask"
+                    class="glass"
+                    fill="#AACCFB"
+                    stroke="#AACCFB"
+                    stroke-miterlimit="10"
+                    stroke-width="6"
+                >
+                    <polyline
+                        points="480 220, 480 450, 470 470, 450 480, 350 480, 330 470, 322 450, 322 220"
+                        stroke-linecap="round"
+                        stroke-width="8"
+                    />
+                    <!-- Upper part glass outline START -->
+                    <line
+                        x1="320"
+                        y1="220"
+                        x2="480"
+                        y2="220"
+                        stroke-width="8"
+                    />
+                    <!-- Upper part glass outline START -->
+                </g>
+                <!-- Glass Outline END -->
+                <!-- Water START -->
+                <g clip-path="url(#mainMask)">
+                    <use
+                        xlink:href="#liquid"
+                        x="770"
+                        y="0"
+                        class="poly"
+                        opacity="0.3"
+                    />
+                    <use xlink:href="#liquid" class="poly" y="0" />
+                    <!-- Bubbles START -->
+                    <g
+                        id="bubbleGroup"
+                        stroke-width="0"
+                        fill="#FFF"
+                        opacity="1"
+                        clip-path="url(#liquidMask)"
+                    >
+                        <rect x="300" y="380" width="3" height="3" />
+                        <rect x="300" y="380" width="3" height="3" />
+                        <rect x="300" y="380" width="3" height="3" />
+                        <rect x="300" y="380" width="3" height="3" />
+                        <rect x="300" y="380" width="3" height="3" />
+                        <rect x="300" y="380" width="3" height="3" />
+                        <rect x="300" y="380" width="3" height="3" />
+                        <rect x="300" y="380" width="3" height="3" />
+                        <rect x="300" y="380" width="3" height="3" />
+                        <rect x="300" y="380" width="3" height="3" />
+                        <rect x="300" y="380" width="3" height="3" />
+                        <rect x="300" y="380" width="3" height="3" />
+                        <rect x="300" y="380" width="3" height="3" />
+                        <rect x="300" y="380" width="3" height="3" />
+                        <rect x="300" y="380" width="3" height="3" />
+                        <rect x="300" y="380" width="3" height="3" />
+                        <rect x="300" y="380" width="3" height="3" />
+                        <rect x="300" y="380" width="3" height="3" />
+                        <rect x="300" y="380" width="3" height="3" />
+                        <rect x="300" y="380" width="3" height="3" />
+                        <rect x="300" y="380" width="3" height="3" />
+                        <rect x="300" y="380" width="3" height="3" />
+                    </g>
+                    <!-- Bubbles END -->
+                </g>
+                <!-- Water END -->
+                <!-- Flask Shine START -->
+                <g id="flaskShine" opacity="0.2" stroke="none">
+                    <polygon
+                        points="335 300, 335 290, 335 238, 335 230, 375 230, 380 235 380 296, 375 300"
+                        fill="#fff"
+                    />
+                    <rect
+                        x="445"
+                        y="230"
+                        width="20"
+                        height="180"
+                        fill="#fff"
+                        opacity="0.2"
+                    />
+                    <polygon
+                        points="450 420, 465 420, 465 445, 460 455, 445 465, 430 465, 430 425, 435 420"
+                        fill="#fff"
+                        opacity="0.8"
+                    />
+                </g>
+                <!-- Flask Shine END -->
+            </svg>
+            <!-- Audio START -->
+            <audio id="heartbeat">
+                <source src="media/audio/heartbeat.mp3" type="audio/mpeg" />
+            </audio>
+            <!-- Audio END -->
+            <div id="theGlass">
+                <h1 class="theGlass">The glass</h1>
+                <h1 class="almostFull">is almost full</h1>
+            </div>
+            <h1 class="runningOut">We're running out of time</h1>
+        </div>
+        <!-- Banner #1 END -->
+        <!-- Banner #2 START -->
+        <div id="banner_info">
+            <div id="landing">
+                <img
+                    id="wwf_logo"
+                    src="media/images/wwf_logo.png"
+                    alt="WWF Logo"
+                />
+                <div id="donate">
+                    <a>Let's donate!</a>
+                </div>
+                <h1 class="landing_greeting">
+                    Press the Shift-Key to play/pause the video
+                </h1>
+                <h1 class="landing_greeting more">To find out more</h1>
+                <div id="enough">
+                    <h1>With a donation you can help us protect the world</h1>
+                </div>
+            </div>
+        </div>
+        <!-- Banner #2 END -->
+        <!-- Video START -->
+        <div id="video">
+            <video
+                width="900"
+                height="auto"
+                disablepictureinpicture
+                controlslist="nodownload"
+            >
+                <source src="media/video/climate_change.mp4" type="video/mp4" />
+            </video>
+        </div>
+        <!-- Video END -->
+        <!-- Scripts START -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+        <script src="javascript/code.js"></script>
+        <!-- Scripts END -->
+    </body>
+</html>

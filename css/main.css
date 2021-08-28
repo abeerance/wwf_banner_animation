@@ -1,0 +1,224 @@
+/* === Variables START === */
+/* === Variables END === */
+/* === Small CSS Reset START === */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* === Small CSS Reset END === */
+/* === Global definitions START === */
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  background: #222;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: "OpenSans", sans-serif;
+}
+
+/* === Global definitions END === */
+/* === Part 1 Banner START=== */
+#banner {
+  height: 505px;
+  width: 900px;
+  background: #03120e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+svg {
+  height: 40%;
+  visibility: hidden;
+  position: absolute;
+  -webkit-transform: translateY(-10%);
+  transform: translateY(-10%);
+}
+
+.liquid {
+  fill: var(--main-color);
+}
+
+#bubbleGroup {
+  stroke: var(--main-color);
+  fill: #222932;
+}
+
+.poly {
+  fill: #3a86ff;
+}
+
+.glass {
+  opacity: 0.2;
+}
+
+#flask {
+  opacity: 0.5;
+  fill: #003459;
+  stroke: #003459;
+}
+
+#theGlass {
+  color: #ffffff;
+  font-size: 3.8em;
+  text-transform: uppercase;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.theGlass {
+  opacity: 0;
+}
+
+.almostFull {
+  font-size: 1em;
+  bottom: -5%;
+  opacity: 0;
+}
+
+.runningOut {
+  color: #ffffff;
+  font-size: 3em;
+  text-transform: uppercase;
+  position: absolute;
+  opacity: 0;
+}
+
+/* === Part 1 Banner END=== */
+/* === Part 2 Banner START=== */
+#banner_info {
+  height: 505px;
+  width: 900px;
+  background: #ffffff;
+  opacity: 1;
+  overflow: hidden;
+  position: absolute;
+  z-index: 100;
+}
+
+#landing {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  position: relative;
+}
+
+#wwf_logo {
+  height: 20em;
+  position: absolute;
+  opacity: 0;
+}
+
+h1.landing_greeting {
+  margin: 0.4em 0 0.2em;
+  opacity: 0;
+}
+
+h1.more {
+  font-size: 3.5em;
+}
+
+#enough {
+  position: absolute;
+  opacity: 1;
+}
+
+#donate {
+  background: #dd681b;
+  border-radius: 1em;
+  position: absolute;
+  height: auto;
+  width: auto;
+  padding: 1em 1.5em;
+  opacity: 0;
+  text-align: center;
+  bottom: 6.5em;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+#donate a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  font-style: impact, sans-serif;
+  text-transform: uppercase;
+}
+
+#video {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  z-index: 50;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+/* === Part 2 Banner END=== */
+/*# sourceMappingURL=main.css.map */

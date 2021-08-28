@@ -1,0 +1,24 @@
+@font-face{
+    font-family: "OpenSansBold", Fallback, sans-serif;
+    src: url('../fonts/OpenSans-Bold.ttf') format('truetype')
+}
+
+@font-face{
+    font-family: "OpenSansExtraBold", Fallback, sans-serif;
+    src: url('../fonts/OpenSans-ExtraBold.ttf') format('truetype')
+}
+
+@font-face{
+    font-family: "OpenSansLight", Fallback, sans-serif;
+    src: url('../fonts/OpenSans-Light.ttf') format('truetype')
+}
+
+@font-face{
+    font-family: "OpenSans", Fallback, sans-serif;
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype')
+}
+
+@font-face{
+    font-family: "OpenSansSemiBold", Fallback, sans-serif;
+    src: url('../fonts/OpenSans-SemiBold.ttf') format('truetype')
+}
