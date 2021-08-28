@@ -5,6 +5,8 @@ browser
 
 ### Video information
 
+Video taken from the WFF Youtube channel. All the credits for the video go to WWF.
+
 Since the video “climate\_change.mp4” is 2:15 minutes long, it will take
 a long time to check the Eventlistener for ending the video. Because of
 that I provided another video “short.mp4”.
